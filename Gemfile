@@ -30,10 +30,9 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'byebug',  '9.0.0', platform: :mri
 end
 group :production do
-  gem 'pg', '0.20.0'
+  gem 'pg'
 end
 
 group :development do
