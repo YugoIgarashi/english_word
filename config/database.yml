@@ -21,13 +21,13 @@ test:
   database: db/test.sqlite3
 
 production:
-   <<: *default
+  <<: *default
   adapter: postgresql
   encoding: unicode
   database: db/production.postgresql
   pool: 5
   timeout: 5000# For details on connection pooling, see Rails configuration guide
-  # https://railsguides.jp/configuring.html#データベース接続をプールする
+  # https://railsguides.jp/configuring.html#
   #pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   #database: sample_app_production
   #username: sample_app
