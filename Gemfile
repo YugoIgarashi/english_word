@@ -30,9 +30,8 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  group :development, :test do
-    gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
-  end
+  gem 'sqlite3', '1.4.1'
+  #do ~ end内部に追加。他のgemは残してください。
 #  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -57,5 +56,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bundler'
 
 group :production do
-  gem 'pg'
+  gem 'pg', '1.1.4'
 end
