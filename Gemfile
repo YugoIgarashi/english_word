@@ -29,10 +29,11 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3'
-  #do ~ end内部に追加。他のgemは残してください。
-#  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug',  '9.0.0', platform: :mri
+end
+group :production do
+  gem 'pg', '0.20.0'
 end
 
 group :development do
@@ -52,9 +53,6 @@ group :test do
 end
 gem 'bundler'
 
-group :production do
-  gem 'pg'
-end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
