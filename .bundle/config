@@ -1,2 +1,2 @@
 ---
-BUNDLE_WITH: "test:production"
+BUNDLE_WITH: "production:test"
