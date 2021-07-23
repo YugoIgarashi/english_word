@@ -7,6 +7,7 @@ environment.plugins.prepend('Provide',
     jQuery: 'jquery/src/jquery'
   })
 )
+module.exports = environment
 /*
 const { VueLoaderPlugin } = require('vue-loader')
 const vue = require('./loaders/vue')
